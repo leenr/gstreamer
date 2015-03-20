@@ -140,6 +140,8 @@ struct _GstQueue {
   GstQuery *last_handled_query;
 
   gboolean flush_on_eos; /* flush on EOS */
+
+  gboolean generate_buffer_list;
 };
 
 struct _GstQueueClass {
