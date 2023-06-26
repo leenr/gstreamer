@@ -1202,6 +1202,11 @@ GList*                  gst_element_get_pad_template_list      (GstElement *elem
 GST_API
 const gchar *           gst_element_get_metadata               (GstElement * element, const gchar * key);
 
+GST_API
+void                    gst_element_set_is_sink                (GstElement * element, gboolean value);
+GST_API
+void                    gst_element_set_is_source              (GstElement * element, gboolean value);
+
 G_DEFINE_AUTOPTR_CLEANUP_FUNC(GstElement, gst_object_unref)
 
 G_END_DECLS

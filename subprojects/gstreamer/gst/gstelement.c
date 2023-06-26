@@ -3920,3 +3920,31 @@ gst_make_element_message_details (const char *name, ...)
 
   return structure;
 }
+
+/**
+ * gst_element_set_is_sink:
+ * @element: a #GstElement to set the SINK flag on.
+ * @value: a value the to set the flag to.
+ */
+void
+gst_element_set_is_sink (GstElement * element, gboolean value)
+{
+  if (value)
+    GST_OBJECT_FLAG_SET (element, GST_ELEMENT_FLAG_SINK);
+  else
+    GST_OBJECT_FLAG_UNSET (element, GST_ELEMENT_FLAG_SINK);
+}
+
+/**
+ * gst_element_set_is_source:
+ * @element: a #GstElement to set the SOURCE flag on.
+ * @value: a value the to set the flag to.
+ */
+void
+gst_element_set_is_source (GstElement * element, gboolean value)
+{
+  if (value)
+    GST_OBJECT_FLAG_SET (element, GST_ELEMENT_FLAG_SOURCE);
+  else
+    GST_OBJECT_FLAG_UNSET (element, GST_ELEMENT_FLAG_SOURCE);
+}

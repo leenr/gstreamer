@@ -42916,6 +42916,8 @@
   "gst_element_set_bus",
   "gst_element_set_clock",
   "gst_element_set_context",
+  "gst_element_set_is_sink",
+  "gst_element_set_is_source",
   "gst_element_set_locked_state",
   "gst_element_set_name",
   "gst_element_set_parent",
