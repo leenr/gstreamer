@@ -721,7 +721,7 @@ gst_query_get_structure (GstQuery * query)
  * Get the structure of a query. This method should be called with a writable
  * @query so that the returned structure is guaranteed to be writable.
  *
- * Returns: (transfer none): the #GstStructure of the query. The structure is
+ * Returns: (transfer full): the #GstStructure of the query. The structure is
  *     still owned by the query and will therefore be freed when the query
  *     is unreffed.
  */
